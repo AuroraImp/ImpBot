@@ -26,7 +26,7 @@ async def hello(context):
 
 
 @client.command(name='who u r',
-                aliases=['who are you', 'who is this', 'who r u','who are you?', 'who is this?', 'who r u?','who r u?' ],
+                aliases=['who are you', 'who is this', 'who r u','who are you?', 'who is this?', 'who r u?','who u r?' ],
                 pass_context=True)
 async def who(context):
     possible_responses = [
