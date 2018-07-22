@@ -14,4 +14,4 @@ async def on_ready():
 async def greet(ctx):
     await ctx.send(":smiley: :wave: Hello, there!")
 
-bot.run('<YOUR_TOKEN_HERE>')
+bot.run('NDYzOTg1MjY2OTExMzQ2Njg4.DjTe8Q.HZk_wkGDBMWTaQPrnlu4j6rjRik')
