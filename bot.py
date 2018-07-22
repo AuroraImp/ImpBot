@@ -9,9 +9,14 @@ BOT_PREFIX = ("")
 TOKEN = "NDYzOTg1MjY2OTExMzQ2Njg4.DjTe8Q.HZk_wkGDBMWTaQPrnlu4j6rjRik"  # Get at discordapp.com/developers/applications/me
 
 client = Bot(command_prefix=BOT_PREFIX)
+@client.event
+async def on_member_join(member):
+    server = member.server
+    fmt = 'Welcome {0.mention} to {1.name}! How can i help you?'
+    await client.send_message(server, fmt.format(member, server))
 
 @client.command(name='hello',
-                aliases=['hola', 'hi', 'hey'],
+                aliases=['hola', 'hi', 'hey', 'hiya', 'whats up', 'whts up','Hola', 'Hi', 'Hey', 'Hiya', 'Whats up', 'Whts up','Hello'],
                 pass_context=True)
 async def hello(context):
     possible_responses = [
@@ -20,8 +25,8 @@ async def hello(context):
     await client.say(random.choice(possible_responses) + ", " + context.message.author.mention)
 
 
-@client.command(name='who',
-                aliases=['who are you', 'who is this', 'who r u','who are you?', 'who is this?', 'who r u?' ],
+@client.command(name='who u r',
+                aliases=['who are you', 'who is this', 'who r u','who are you?', 'who is this?', 'who r u?','who r u?' ],
                 pass_context=True)
 async def who(context):
     possible_responses = [
