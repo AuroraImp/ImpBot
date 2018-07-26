@@ -77,7 +77,7 @@ class ImperialGuard:
                 pass_context=True)
     async def fainq(self,context):
 
-        await self.bot.say('The Imperial Guard is protected by NPO and GoTG. For more talk to @denia#8628  '+ context.message.author.mention)
+        await self.bot.say('The Imperial Guard is protected by NPO and GoTG. For more talk to Denia  '+ context.message.author.mention)
 
     @commands.command(name='mask',
                 description='To mask/ assign role',
@@ -107,7 +107,7 @@ class ImperialGuard:
                 pass_context=True)
     async def tax(self,context):
 
-        await self.bot.say('@Denia#8628 is tax freak. Please ask him, '+ context.message.author.mention)
+        await self.bot.say('Denia is tax freak. Please ask him, '+ context.message.author.mention)
 
 
 
@@ -118,7 +118,7 @@ class ImperialGuard:
                 pass_context=True)
     async def loan(self,context):
 
-        await self.bot.say('IG gives loan upto 150 mil, depends on income, '+ context.message.author.mention)
+        await self.bot.say('IG gives loan upto 150 mil, depends on your income, '+ context.message.author.mention)
 
 
     @commands.command(name='grant',
