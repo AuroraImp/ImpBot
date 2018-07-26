@@ -16,7 +16,7 @@ client.load_extension('igcommand')
 @client.event
 async def on_member_join(member):
     channel = member.server.get_channel("472097268158169119")
-    await client.send_message(channel, 'Hey '+ member.mention+'! Enter help to know the list of command :) ')
+    await client.send_message(channel, 'Hey '+ member.mention+'! Enter help to ask the questions from list :) ')
 
 
 
