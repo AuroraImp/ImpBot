@@ -77,7 +77,7 @@ class ImperialGuard:
                 pass_context=True)
     async def fainq(self,context):
 
-        await self.bot.say('The Imperial Guard is protected by NPO and GoTG. For more talk to Denia  '+ context.message.author.mention)
+        await self.bot.say('The Imperial Guard is protected by NPO and GoG. For more talk to Denia  '+ context.message.author.mention)
 
     @commands.command(name='mask',
                 description='To mask/ assign role',
