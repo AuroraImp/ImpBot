@@ -67,7 +67,7 @@ class ImperialGuard:
                 pass_context=True)
     async def req(self,context):
 
-        await self.bot.say('At least 5 cities and 15 days old of gametime, '+ context.message.author.mention)
+        await self.bot.say('At least 2 cities and 15 days old of gametime, '+ context.message.author.mention)
 
 
     @commands.command(name='fa',
